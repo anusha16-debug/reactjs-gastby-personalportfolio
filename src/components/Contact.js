@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Heading from './Reusable/Heading';
 import ContactImg from '../images/contact.jpg'
 
@@ -11,6 +11,15 @@ const Contact = () => {
       event.preventDefault();
     }
    }
+
+   useEffect(() => {
+    window.onbeforeunload = () => {
+      for(const form of document.getElementsByTagName('form')) {
+        form.reset();
+      }
+    }
+   }, [])
+
     return (
         <div className="section-pad contact-theme mx-auto" id="contact">
         <Heading title="Contact"/>
