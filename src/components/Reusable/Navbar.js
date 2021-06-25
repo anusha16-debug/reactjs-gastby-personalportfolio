@@ -51,7 +51,7 @@ const Navbar = () => {
   
     return (
         <nav className="navbar navbar-expand-lg bg-theme text-white fixed-top">
-            <Link to="" className="navbar-brand">
+            <Link to="/" className="navbar-brand">
                 <em className="text-white font-weight-bold"> <VscCode className="logo-icon"></VscCode> AH <VscCode className="logo-icon"></VscCode></em>
             </Link>
             <button className="navbar-toggler" type="button" onClick={myToggler}>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 {menus.map(menu => {
                       return (
                         <li key={menu.id} className="nav-item text-uppercase">
-                        <Link to={menu.url} className="nav-link text-white">{menu.text}</Link>
+                        <Link to={menu.url} className="nav-link text-white" onClick={myToggler}>{menu.text}</Link>
                     </li>
                       )
                     })}

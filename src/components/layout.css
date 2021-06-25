@@ -58,18 +58,18 @@
 }
 
 .about-info{
-  animation: fade 1.2s ease-in-out 1s both;
+  animation: fade 2.2s ease-in-out 1s both;
   animation-fill-mode: both;
 }
 
 .skills-list{
-  animation: fade 1.4s ease-in-out 1s both;
+  animation: fade 2.4s ease-in-out 1s both;
   animation-fill-mode: both;
 }
 
 
 .projects-info, .contact-info, .education-details{
-  animation: fade 1.5s ease-in-out 1s both;
+  animation: fade 2.5s ease-in-out 1s both;
   animation-fill-mode: both;
 }
 
