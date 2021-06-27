@@ -1,12 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import Heading from './Reusable/Heading';
 import ContactImg from '../images/contact.jpg'
 
 const Contact = () => {
   
-   const [buttonstate, setButtonState] = useState(true);
-
-   
 
    const phoneNumberValidation = (event) => {
     const pattern = /^(0|[1-9][0-9]*)$/;
@@ -16,12 +13,6 @@ const Contact = () => {
     }
    }
 
-//    const avoidBlanks = (event) => {
-//     if (/\S/.test(event.target.value)) {
-//       event.preventDefault();
-//     }
-// }
-  
   
   
    useEffect(() => {
@@ -53,12 +44,13 @@ const Contact = () => {
            </div>
            <div className="form-group">
            <label  className="text-white">Mobile Number</label>
-           <input type="tel" className="form-control" name="mobile" id="mobile" maxLength="10"  placeholder="Your mobile number" required autoComplete="none"/>
+           <input type="tel" className="form-control" name="mobile" id="mobile" maxLength="10" onKeyPress={phoneNumberValidation} placeholder="Your mobile number" required autoComplete="none"/>
            </div>
            <div className="form-group">
            <label  className="text-white">Message</label>
-           <textarea type="text" className="form-control" name="message" id="message" placeholder="Your message"   required autoComplete="none"/>
+           <textarea type="text" className="form-control" name="message" id="message" placeholder="Your message"  required autoComplete="none"/>
            </div>
+           <input type="text" className="form-control" name="hidden" id="hidden" style={{'display': 'none'}} placeholder=""  autoComplete="on"/>
            <button  type="submit" className="btn btn-warning btn-lg text-white">Submit</button>
            </form>
          </div>
