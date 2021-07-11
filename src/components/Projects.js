@@ -22,10 +22,10 @@ const Projects = () => {
                                 </div>
                                 <div className="col-md-4 col-lg-6">
                                     <div className="card text-white card-box mb-3" style={{ 'maxWidth': '18rem'}}>
-                                        <div className="card-header">Angular 10</div>
+                                        <div className="card-header">Angular 10, Firebase Authentication</div>
                                         <div className="card-body">
-                                            <h6 className="card-title text-warning">Make your planets favourite</h6>
-                                            <p className="card-text font-15">A very simple angular application demonstrating how to integrate rest apis, display the planets lists and add to favourites list</p>
+                                            <h6 className="card-title text-warning">Travelgram</h6>
+                                            <p className="card-text font-15">A hobby project similar to instagram where the user can post his pictures, also with likes and dislikes functionalities</p>
                                         </div>
                                     </div>
                                 </div>
