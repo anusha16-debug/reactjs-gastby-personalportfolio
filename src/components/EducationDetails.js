@@ -2,7 +2,7 @@ import React from "react";
 import Heading from './Reusable/Heading';
 import educationImg from '../images/self-education.jpg';
 import myResume from '../documents/Anusha-Hublikar-Resume.pdf'
-import { Link } from 'gatsby';
+
 
 const EducationDetails = () => {
     return (
